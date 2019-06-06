@@ -5,33 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- https://github.com/daneden/animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="styles/style.css">
-
     <title>Projects</title>
 </head>
 
-<body>
+<body id="projects" class="animated fadeIn slow">
     <nav>
         <div class="nav-wrapper">
-            <a href="/" class="brand-logo">Logo</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down cl-effect-1">
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/contact">Contact Me</a> </lis="cl-effect-1">
+            <ul class="links cl-effect-1 right hide-on-med-and-down">
+                <li><a id="projectsLink" class="route active" href="#">Projects</a></li>
+                <li><a id="contactLink" class="route" href="/contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
         <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact Me</a></li>
+        <li><a href="/contact">Contact</a></li>
     </ul>
-
-    <h1>Projects</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h1>Projects</h1>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/logic.js"></script>
 </body>
 
 </html>

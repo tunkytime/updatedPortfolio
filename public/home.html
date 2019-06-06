@@ -5,40 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- https://github.com/daneden/animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Home</title>
 </head>
 
-<body>
-    <ul id="slide-out" class="sidenav">
-        <li>
-            <div class="user-view">
-                <a href="/"><img class="circle" src="/images/thumbnail.jpg"></a>
-            </div>
-        <li> <a class="waves-effect" href="/projects"><i class="material-icons">apps</i> Projects</a></li>
-        <li> <a class="waves-effect" href="/contact"><i class="material-icons">email </i> Contact Me</a></li>
-        <li>
-            <div class="divider"></div>
-        </li>
-    </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
-    <div class="container valign-wrapper white-text" style="height: 75vh; width: 50vw">
-        <div class="row">
-            <div class="col center-align">
-                <h5>THE PORTFOLIO OF</h5>
-                <h1 style="margin-top: 0;">ALEX SCHAAF</h1>
-                <h5>FULL-STACK WEB DEVELOPER</h5>
-            </div>
+<body id="home">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="center links animated fadeIn cl-effect-1 hide-on-med-and-down">
+                <a id="projectsLink" class="route" href="/projects">Projects</a>
+                <a id="contactLink" class="route" href="/contact">Contact</a>
+            </ul>
         </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+    <div class="animated fadeIn main-title">
+        <h5 class="thin grey-text">The Porfolio Of</h5>
+        <h1 style="margin-top: 1.5rem;">
+            <span class="thin">Alex</span> Schaaf</span>
+        </h1>
+        <h4><span class="thin teal-text text-lighten-3">Full-Stack</span> Web Developer</h4>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/logic.js"></script>
 </body>
