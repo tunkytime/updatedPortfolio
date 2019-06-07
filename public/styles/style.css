@@ -1,6 +1,6 @@
 /* 
 ===============
-home.html 
+GLOBAL
 ===============
 */
 body {
@@ -16,37 +16,64 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222222', endColorstr='#80cbc4  ', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
   background-attachment: fixed;
+  color: #fff;
 }
 
+h1 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #999999;
+}
+
+.heading {
+  color: #555555;
+  text-transform: none;
+  font-family: "Satisfy", cursive;
+}
+
+.heading::first-letter {
+  font-size: 1.7em;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.bottomBorder {
+  border-bottom: 2px solid #00897b;
+  padding: 2px;
+}
+
+/* 
+===============
+NAVBAR
+===============
+*/
 nav {
   background: none;
   box-shadow: none;
 }
 
-h1 {
-  margin-top: 0;
+nav .material-icons {
+  margin-left: 10px;
+  color: #9e9e9e;
+}
+
+nav .material-icons:hover {
+  color: #fff;
 }
 
 .route {
   display: inline;
 }
 
-.links {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  animation-duration: 1s;
-  animation-delay: 1s;
-}
-
-.links a {
-  color: #9e9e9e;
-}
-
-.links a:hover {
-  background: none;
-}
-
-/* link effect: brackets */
 .cl-effect-1 a::before,
 .cl-effect-1 a::after {
   display: inline-block;
@@ -58,7 +85,7 @@ h1 {
 
 .cl-effect-1 a::before {
   margin-right: 3px;
-  content: "[";
+  content: "{";
   -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
   transform: translateX(20px);
@@ -70,7 +97,7 @@ h1 {
 
 .cl-effect-1 a::after {
   margin-left: 3px;
-  content: "]";
+  content: "}";
   -webkit-transform: translateX(-20px);
   -moz-transform: translateX(-20px);
   transform: translateX(-20px);
@@ -86,8 +113,28 @@ h1 {
   transform: translateX(0px);
 }
 
-nav .active {
-  color: #fff;
+/* 
+===============
+home.html 
+===============
+*/
+
+.tagline {
+  animation-delay: 1s;
+}
+
+.links {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  animation-delay: 1.5s;
+}
+
+.links a {
+  color: #9e9e9e;
+}
+
+.links a:hover {
+  background: none;
 }
 
 .main-title {
@@ -105,6 +152,122 @@ nav .active {
   letter-spacing: 0.2em;
 }
 
-.main-title .thin {
-  font-weight: 200;
+/* 
+===============
+projects.html 
+===============
+*/
+.flip-card {
+  background-color: transparent;
+  margin: 0 auto 0.5em auto;
+  height: 350px;
+  border: 2px solid #fff;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #ccc;
+  color: #222222;
+}
+
+/* style the back side */
+.flip-card-back {
+  background-color: #80cbc4;
+  color: #222222;
+  transform: rotateY(180deg);
+}
+
+.fab,
+.fas {
+  color: #222222;
+  font-size: 3rem;
+}
+
+.fab:hover,
+.fas:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.grow {
+  transition: all 0.3s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.2);
+}
+
+/* 
+===============
+contact.html 
+===============
+*/
+#contactInfo {
+  margin-top: 7%;
+}
+
+#contactInfo a {
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+}
+
+#contactInfo i {
+  font-size: 3em;
+  line-height: 100px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  width: 20%;
+  font-size: 0.9em;
+}
+
+table tr {
+  text-transform: uppercase;
+  border: none;
+  box-shadow: none;
+}
+
+th,
+td {
+  padding: 0px 0px 5px 0px !important;
+  letter-spacing: 1px;
+}
+
+th a:hover {
+  opacity: 0.9;
+}
+
+.contactText {
+  font-size: 1.5em;
 }
