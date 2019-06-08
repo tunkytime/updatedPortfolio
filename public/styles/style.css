@@ -4,18 +4,7 @@ GLOBAL
 ===============
 */
 body {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#222222+0,80cbc4  +100 */
-  background: #222222;
-  /* Old browsers */
-  background: -moz-linear-gradient(160deg, #222222 65%, #80cbc4 65%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(160deg, #222222 65%, #80cbc4 65%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(160deg, #222222 65%, #80cbc4 65%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222222', endColorstr='#80cbc4  ', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-  background-attachment: fixed;
+  background-color: #071d5a;
   color: #fff;
 }
 
@@ -33,7 +22,6 @@ a:hover {
 }
 
 .heading {
-  color: #555555;
   text-transform: none;
   font-family: "Satisfy", cursive;
 }
@@ -47,6 +35,7 @@ a:hover {
 }
 
 .bottomBorder {
+  text-transform: lowercase;
   border-bottom: 2px solid #00897b;
   padding: 2px;
 }
@@ -57,22 +46,23 @@ NAVBAR
 ===============
 */
 nav {
-  background: none;
+  background: #071d5a;
   box-shadow: none;
 }
 
 nav .material-icons {
   margin-left: 10px;
-  color: #9e9e9e;
+  color: #fff;
 }
 
 nav .material-icons:hover {
-  color: #fff;
+  color: #80cbc4;
 }
 
 .route {
   display: inline;
 }
+
 
 .cl-effect-1 a::before,
 .cl-effect-1 a::after {
@@ -84,8 +74,8 @@ nav .material-icons:hover {
 }
 
 .cl-effect-1 a::before {
-  margin-right: 3px;
-  content: "{";
+  margin-right: 2px;
+  content: "<";
   -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
   transform: translateX(20px);
@@ -96,8 +86,8 @@ nav .material-icons:hover {
 }
 
 .cl-effect-1 a::after {
-  margin-left: 3px;
-  content: "}";
+  margin-left: 2px;
+  content: "/>";
   -webkit-transform: translateX(-20px);
   -moz-transform: translateX(-20px);
   transform: translateX(-20px);
@@ -130,11 +120,17 @@ home.html
 }
 
 .links a {
-  color: #9e9e9e;
+  color: #fff;
 }
 
 .links a:hover {
   background: none;
+  color: #80cbc4;
+}
+
+.links .selected {
+  color: #80cbc4;
+  font-weight: 500;
 }
 
 .main-title {
@@ -159,17 +155,29 @@ projects.html
 */
 .flip-card {
   background-color: transparent;
-  margin: 0 auto 0.5em auto;
   height: 350px;
+  width: 100%;
   border: 2px solid #fff;
+  overflow: hidden;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
+}
+
+.card-image {
+  opacity: .5;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+.card-image:hover {
+  opacity: 1;
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
-  width: 100%;
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
@@ -192,7 +200,7 @@ projects.html
 
 /* style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #ccc;
+  background-color: #000;
   color: #222222;
 }
 
@@ -203,16 +211,19 @@ projects.html
   transform: rotateY(180deg);
 }
 
-.fab,
-.fas {
-  color: #222222;
-  font-size: 3rem;
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.fab:hover,
-.fas:hover {
-  color: #fff;
-  opacity: 0.8;
+.caption .title {
+  font-size: 1.5em;
 }
 
 .grow {
@@ -230,6 +241,10 @@ contact.html
 */
 #contactInfo {
   margin-top: 7%;
+}
+
+#contactInfo .btn-large {
+  box-shadow: none;
 }
 
 #contactInfo a {
