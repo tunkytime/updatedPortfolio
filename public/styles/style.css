@@ -68,6 +68,7 @@ nav .material-icons:hover {
 .cl-effect-1 a::after {
   display: inline-block;
   opacity: 0;
+  color: #fff;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
   -moz-transition: -moz-transform 0.3s, opacity 0.2s;
   transition: transform 0.3s, opacity 0.2s;
@@ -79,10 +80,6 @@ nav .material-icons:hover {
   -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
   transform: translateX(20px);
-}
-
-.cl-effect-1 a:hover {
-  color: #fff;
 }
 
 .cl-effect-1 a::after {
@@ -97,6 +94,7 @@ nav .material-icons:hover {
 .cl-effect-1 a:hover::after,
 .cl-effect-1 a:focus::before,
 .cl-effect-1 a:focus::after {
+  color: #80cbc4;
   opacity: 1;
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
@@ -258,12 +256,32 @@ contact.html
   line-height: 100px;
 }
 
+#contact section {
+  margin-top: 3em;
+}
+
+#contact section div {
+  margin-top: 1.5em;
+}
+
+#contact section h4 {
+  text-transform: uppercase;
+  font-size: 1.7em;
+}
+
+#contact section h5 {
+  font-size: 1.2em;
+}
+
+#contact section i {
+  font-size: 4em;
+}
+
 table {
   width: 100%;
 }
 
 td {
-  width: 20%;
   font-size: 0.9em;
 }
 
