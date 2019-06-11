@@ -2,31 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- https://github.com/daneden/animate.css -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/d91fa56bef.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Home</title>
 </head>
 
 <body id="home">
     <nav>
-        <div class="nav-wrapper">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="center links animated fadeInUp slow cl-effect-1 hide-on-med-and-down">
-                <a class="route" href="/projects">Projects</a>
-                <a class="route" href="/contact">Contact</a>
-            </ul>
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="#" id="closeNav" class="closebtn">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content cl-effect-1">
+                <a href="/">about</a>
+                <a href="/projects">projects</a>
+                <a href="/contact">contact</a>
+            </div>
         </div>
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <a class="left" href="#" id="openNav"><i class="fas fa-bars"></i></a>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
+
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+        <a href="https://github.com/tunkytime" class="github"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/alexander-schaaf/" target="_blank" class="linkedin"><i
+                class="fab fa-linkedin-in"></i></a>
+    </div>
+
     <div class="main-title">
         <div class="cl-effect-1 animated fadeIn slow">
             <h5 class="thin grey-text">The Porfolio Of</h5>
@@ -35,7 +46,7 @@
             </h1>
         </div>
         <div class="animated fadeIn slow tagline">
-            <h4><span class="thin teal-text text-lighten-3">Full-Stack</span> Web Developer</h4>
+            <h4 class="lowercase"><span class="thin underline">Full-Stack</span> Web Developer</h4>
         </div>
     </div>
 
