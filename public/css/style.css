@@ -546,14 +546,56 @@ contact.html
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
+.mobile {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
   body {
     background: url(../images/bg-mobile.jpg) no-repeat center center fixed;
   }
 
-  .icon-bar {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .mobile h4 {
+    font-size: 1.7em;
+  }
+
+  .hvrbox .row {
+    margin-top: 0;
+  }
+
+  .main-title h5 {
+    font-size: 1.5em;
+  }
+
+  .hvrbox h4 {
+    font-size: 1.2em;
+    margin: 0.7em 0 0 0;
+  }
+
+  .hvrbox p {
+    margin: 0.3em 0 .2em 0;
+  }
+
+  .hvrbox .chip {
+    margin: 0.5em 0.2em 0 0;
+  }
+
+  .navbar-fixed {
+    position: relative;
+    height: 56px;
     z-index: 1;
+  }
+
+  .icon-bar {
+    z-index: 2;
     position: fixed;
     right: 5%;
     top: 2%;
