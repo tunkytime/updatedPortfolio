@@ -16,59 +16,54 @@
 
 <body id="contact" class="animated fadeIn slow">
     <nav>
-        <div class="nav-wrapper">
-            <a href="/" class="brand-logo"><i class="material-icons">home</i></a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="links right hide-on-med-and-down">
-                <li><a href="/projects">Projects</a></li>
-                <li><a class="selected" href="#">Contact</a></li>
-            </ul>
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="#" id="closeNav" class="closebtn">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content cl-effect-1">
+                <a href="/">about</a>
+                <a href="/projects">projects</a>
+                <a href="/contact">contact</a>
+            </div>
         </div>
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <a class="left" href="#" id="openNav"><i class="fas fa-bars"></i></a>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
 
     <div class="container">
         <div class="animated fadeInUp slow">
-            <h1 class="heading">Contact Me</h1>
+            <h1 class="heading animated fadeInUp slow underline">Contact Me</h1>
+            <p>Connect with me, or download my resume <a href="docs/resume-schaaf.pdf" target="_blank">here.</a></p>
         </div>
         <div class="row">
             <section>
                 <div class="col s12 m6 l3 center-align">
-                    <a href="mailto:schaaf1091@gmail.com" target="_blank"><i class="fas fa-envelope"></i>
-                        <h4 class="teal-text text-lighten-3">Email</h4>
+                    <a class="grow" href="mailto:schaaf1091@gmail.com" target="_blank"><i class="fas fa-envelope"></i>
+                        <h4 class="blue-text text-darken-3">Email</h4>
                         <h5><span class="thin bottomBorder">schaaf1091@gmail.com</span></h5>
                 </div>
                 <div class="col s12 m6 l3 center-align">
-                    <a href="https://www.linkedin.com/in/alexander-schaaf/" target="_blank"><i
-                            class="fas fa-mobile-alt"></i>
-                        <h4 class="teal-text text-lighten-3">Phone</h4>
+                    <a href="" target="_blank"><i class="fas fa-mobile-alt"></i>
+                        <h4 class="blue-text text-darken-3">Phone</h4>
                         <h5><span class="thin bottomBorder">801.688.9877</span></h5>
                     </a>
                 </div>
                 <div class="col s12 m6 l3 center-align">
                     <a href="https://github.com/tunkytime" target="_blank"><i class="fab fa-github"></i>
-                        <h4 class="teal-text text-lighten-3">GitHub</h4>
+                        <h4 class="blue-text text-darken-3">GitHub</h4>
                         <h5><span class="thin bottomBorder">/tunkytime</span></h5>
                     </a>
                 </div>
                 <div class="col s12 m6 l3 center-align">
                     <a href="https://www.linkedin.com/in/alexander-schaaf/" target="_blank"><i
                             class="fab fa-linkedin-in"></i>
-                        <h4 class="teal-text text-lighten-3">LinkedIn</h4>
+                        <h4 class="blue-text text-darken-3">LinkedIn</h4>
                         <h5><span class="thin bottomBorder">/alexander-schaaf</span></h5>
                     </a>
                 </div>
             </section>
         </div>
-    </div>
-
-    <div class="fixed-action-btn">
-        <a class="btn-floating btn-large waves-effect waves-light teal lighten-3 tooltipped"
-            href="docs/resume-schaaf.pdf" target="_blank" data-position="left" data-tooltip="My Resume">
-            <i class="fas fa-file"></i></a>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
