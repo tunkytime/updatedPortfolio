@@ -24,21 +24,21 @@ a {
 
 a:hover {
   color: #999999;
-  -moz-transition: all .1s ease-in-out 0s;
-  -webkit-transition: all .1s ease-in-out 0s;
-  -ms-transition: all .1s ease-in-out 0s;
-  transition: all .1s ease-in-out 0s;
+  -moz-transition: all 0.1s ease-in-out 0s;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  -ms-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
 }
 
 .heading {
   color: #fff;
   font-weight: 200;
-  text-transform: lowercase
+  text-transform: lowercase;
 }
 
 .heading::first-letter {
   font-weight: normal;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .thin {
@@ -68,7 +68,7 @@ a:hover {
 
 .underline:after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -2px;
   left: 0px;
   height: 4px;
@@ -84,7 +84,6 @@ a:hover {
     width: 100%;
   }
 }
-
 
 /* 
 ===============
@@ -157,7 +156,7 @@ nav a:hover {
 .overlay a:hover,
 .overlay a:focus {
   color: #fff;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .cl-effect-1 a::before,
@@ -212,7 +211,7 @@ nav a:hover {
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
   .overlay a {
-    font-size: 20px
+    font-size: 20px;
   }
 
   .overlay .closebtn {
@@ -293,14 +292,14 @@ home.html
 }
 
 .github {
-  background: #24292E;
+  background: #24292e;
   color: white;
   width: 100%;
 }
 
 .github:hover {
   width: 150%;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .linkedin {
@@ -311,7 +310,7 @@ home.html
 
 .linkedin:hover {
   width: 150%;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /* 
@@ -352,10 +351,10 @@ projects.html
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
-  -moz-transition: all .3s ease-in-out 0s;
-  -webkit-transition: all .3s ease-in-out 0s;
-  -ms-transition: all .3s ease-in-out 0s;
-  transition: all .3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .hvrbox:hover .hvrbox-layer_top,
@@ -398,7 +397,7 @@ projects.html
 
 .hvrbox a {
   text-transform: uppercase;
-  background: none
+  background: none;
 }
 
 .hvrbox a:hover {
@@ -406,14 +405,14 @@ projects.html
   background: #1565c0;
   border-radius: 5px;
   padding: 2px 12px;
-  -moz-transition: all .3s ease-in-out 0s;
-  -webkit-transition: all .3s ease-in-out 0s;
-  -ms-transition: all .3s ease-in-out 0s;
-  transition: all .3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .hvrbox .fas {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .chip {
@@ -499,7 +498,7 @@ contact.html
 }
 
 .corner-ribbon.shadow {
-  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 /* Different positions */
@@ -542,7 +541,11 @@ contact.html
 }
 
 .corner-ribbon.gradient {
-  background: linear-gradient(135deg, rgba(21, 101, 192, 1) 20%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(21, 101, 192, 1) 20%,
+    rgba(0, 0, 0, 1) 100%
+  );
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
@@ -581,7 +584,7 @@ contact.html
   }
 
   .hvrbox p {
-    margin: 0.3em 0 .2em 0;
+    margin: 0.3em 0 0.2em 0;
   }
 
   .hvrbox .chip {
